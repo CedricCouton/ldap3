@@ -25,8 +25,8 @@ tokio-service = "0.1"
 url = "1.4.0"
 
 [target.'cfg(all(unix, not(feature = "minimal")))'.dependencies]
-tokio-uds = "0.1.4" 
-tokio-uds-proto = "0.1"
+tokio-uds = { git = "https://github.com/CedricCouton/tokio-uds.git", branch = "android"}
+tokio-uds-proto = { git = "https://gitlab.com/CedricCouton/tokio-uds-proto", branch = "android"}
 
 [dependencies.lber]
 path = "lber"
